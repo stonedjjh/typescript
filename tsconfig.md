@@ -47,3 +47,84 @@ tsc --init
 ```
 
 Esto genera un archivo con muchas opciones comentadas que puedes ajustar según tus necesidades.
+
+## Opciones
+
+Consulta la [documentación oficial](https://www.typescriptlang.org/tsconfig) para una lista completa de opciones y su descripción detallada.
+
+### sourceMap
+
+Tipo: Boolean
+
+Genera archivos .map para facilitar la depuración en navegadores y herramientas que soportan mapas de origen.
+
+### removeComments
+
+Tipo: Boolean
+
+Elimina todos los comentarios del código JavaScript emitido.
+
+### Exclude e Include
+
+Tipo: Array de Strings
+
+- exclude: Lista de patrones de archivos/carpetas que no se deben compilar.
+
+- include: Lista de patrones de archivos/carpetas que se deben compilar.
+
+```TypeScript
+//tsconfig.json
+"include": [
+    "funciones/**/*",
+    "objetos/**/*",
+    "tipos/**/*"
+  ],
+  "exclude": [
+    "node_modules",
+    "**/*.spec.ts",
+    "funciones/temp.ts"
+  ]
+```
+
+### outFile
+
+Tipo: String
+
+Concatena todos los archivos de salida en un solo archivo JavaScript.
+
+```TypeScript
+//tsconfig.json
+"outFile": "./dist/app.js"
+```
+
+### watch
+
+Tipo: Boolean
+Habilita el modo de observación para recompilar automáticamente cuando los archivos fuente cambien.
+
+```TypeScript
+//tsconfig.json
+"watch": true
+```
+
+### target
+
+Tipo: String
+
+Especifica la versión de JavaScript a la que se debe compilar el código TypeScript.
+
+```TypeScript
+//tsconfig.json
+"target": "es6"
+```
+
+### module
+
+Tipo: String
+
+Define el sistema de módulos que se utilizará en el código emitido.
+
+```TypeScript
+//tsconfig.json
+"module": "commonjs"
+```

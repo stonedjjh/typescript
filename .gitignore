@@ -1,0 +1,7 @@
+udemy/FernandoHerrera/BASES/funciones/*.js
+udemy/FernandoHerrera/BASES/objetos/*.js
+udemy/FernandoHerrera/BASES/tipos/*.js
+
+./node_modules
+.DS_Store
+
