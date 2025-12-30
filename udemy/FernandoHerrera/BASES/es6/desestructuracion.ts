@@ -36,11 +36,20 @@ const printAvenger = ( avengers: {
 //mejor con desestructuracion en los parametros de la funcion
 const printAvenger2 = ( {ironman, ...resto}: Avengers) =>{
     console.log( {ironman}, {resto}
-        
+
      );
 }
 
 printAvenger(avengers);
 printAvenger2(avengers); 
+
+//desestructuracion de arreglos
+
+const avengersArr: string[] = ['Cap. America', 'Ironman', 'Hulk'];
+const [ capi, iron, hulk ] = avengersArr;
+console.log( capi, iron, hulk );
+
+
+
 
 })()
