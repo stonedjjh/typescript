@@ -13,6 +13,7 @@
             return 'Mundo salvado!';
         }
     }
+    
     class Villian extends Mutante {
         conquistarMundo() {
             return 'Mundo conquistado!';
@@ -25,7 +26,10 @@
 
     const wolverine = new Xmen('Wolverine', 'Logan');
     const magneto = new Villian('Magneto', 'Max Eisenhardt');
-
+    
     console.log( wolverine );
     console.log( magneto );
+
+    printName( wolverine );
+    printName( magneto );
 })()
